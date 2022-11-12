@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="/styles/normalize.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel">
+        <div class="title">Simple Calculator</div>
+        <div><input type="text" id="display" /></div>
+        <div class="all-buttons">
+          <button id="ac-button" onclick="ac()">AC</button>
+          <button id="del-button" onclick="del()">DEL</button>
+          <button id="dot-button" onclick="operator('.')">.</button>
+          <button id="add-button" class="function-clr" onclick="operator('+')">
+            +
+          </button>
+          <button id="one-button" onclick="keys('1')">1</button>
+          <button id="two-button" onclick="keys('2')">2</button>
+          <button id="three-button" onclick="keys('3')">3</button>
+          <button id="sub-button" class="function-clr" onclick="operator('-')">
+            -
+          </button>
+          <button id="four-button" onclick="keys('4')">4</button>
+          <button id="five-button" onclick="keys('5')">5</button>
+          <button id="six-button" onclick="keys('6')">6</button>
+          <button
+            id="multiply-button"
+            class="function-clr"
+            onclick="operator('*')"
+          >
+            *
+          </button>
+          <button id="seven-button" onclick="keys('7')">7</button>
+          <button id="eight-button" onclick="keys('8')">8</button>
+          <button id="nine-button" onclick="keys('9')">9</button>
+          <button
+            id="percentage-button"
+            class="function-clr"
+            onclick="operator('%')"
+          >
+            %
+          </button>
+          <button id="zero-button" onclick="keys('0')">0</button>
+          <button id="equal-button" class="equal-clr" onclick="equalTo()">
+            =
+          </button>
+          <button
+            id="divide-button"
+            class="function-clr"
+            onclick="operator('/')"
+          >
+            /
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="/script/script.js"></script>
+  </body>
+</html>

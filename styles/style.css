@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --panel-clr: rgb(128, 128, 128);
+  --dark-clr: rgb(0, 0, 0);
+  --white-clr: rgb(255, 255, 255);
+  --hover-clr: rgb(252, 166, 7);
+  --functions-clr: rgb(224, 61, 40);
+  --display-clr: rgb(211, 211, 211);
+  --equalTo-clr: rgb(89, 145, 50);
+}
+
+html {
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel {
+  background-color: var(--panel-clr);
+  width: 36rem;
+  height: 32rem;
+  border-radius: 8px;
+}
+
+.title {
+  background-color: var(--dark-clr);
+  color: var(--white-clr);
+  position: absolute;
+  width: 35rem;
+  padding: 9px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 8px 10px 10px 8px;
+}
+
+#display {
+  background-color: var(--display-clr);
+  position: absolute;
+  width: 35rem;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 3.9rem 10px 10px 8px;
+  text-align: end;
+  font-size: 16px;
+}
+
+button {
+  width: 8.7rem;
+  padding: 1.2rem;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--hover-clr);
+}
+
+.all-buttons {
+  width: 35rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 9rem 10px;
+}
+
+#zero-button {
+  width: 278px;
+}
+
+.function-clr {
+  background-color: var(--functions-clr);
+  font-size: 24px;
+}
+
+.equal-clr {
+  background-color: var(--equalTo-clr);
+  font-size: 22px;
+}
